@@ -9,7 +9,7 @@ type Message = {
   content: string;
 };
 
-let memory: Record<string, Message[]> = {};
+const memory: Record<string, Message[]> = {};
 
 export async function POST(req: Request) {
   try {

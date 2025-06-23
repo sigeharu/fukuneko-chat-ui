@@ -61,6 +61,9 @@ export default function Home() {
             <div className="mt-1">{msg.content}</div>
           </div>
         ))}
+        {isLoading && (
+          <div className="text-sm text-gray-400 text-center">🤖 プリが考え中です…</div>
+        )}
         <div ref={messagesEndRef} />
       </div>
 
